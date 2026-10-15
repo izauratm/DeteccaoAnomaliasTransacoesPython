@@ -40,12 +40,34 @@ Para estruturar a base sem vazar informações do conjunto de teste para o de tr
 
 Foram testados e comparados diferentes algoritmos de classificação. Os resultados abaixo refletem o desempenho focado exclusivamente na **classe de fraude (`Class 1`)**:
 
-| Modelo | Limiar (Threshold) | Recall (Fraude) | Precisão (Fraude) | F1-Score |
-| :--- | :---: | :---: | :---: | :---: |
-| **Regressão Logística** (Baseline) | $0.50$ | ~92% | ~6% | ~0.11 |
-| **Regressão Logística** (Otimizado) | Limiar Ajustado | ~88% | ~75% | ~0.81 |
-| **Random Forest** | Limiar Ajustado | ~82% | ~88% | ~0.85 |
-| **XGBoost** | Padrão | ~80% | ~89% | ~0.84 |
+### Saída da Regressão Logística
+
+```text
+Treinando o modelo de Regressão Logística...
+
+--- Relatório com Limiar Padrão (0.5) ---
+              precision    recall  f1-score   support
+
+           0       1.00      0.97      0.99     56864
+           1       0.06      0.92      0.11        98
+
+    accuracy                           0.97     56962
+   macro avg       0.53      0.95      0.55     56962
+weighted avg       1.00      0.97      0.99     56962
+
+
+Melhor limiar de decisão encontrado: 1.0000
+
+--- Relatório com Limiar Otimizado (1.0000) ---
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     56864
+           1       0.83      0.82      0.82        98
+
+    accuracy                           1.00     56962
+   macro avg       0.92      0.91      0.91     56962
+weighted avg       1.00      1.00      1.00     56962
+````
 
 > **Nota:** A escolha do modelo final depende do custo financeiro de um Falso Negativo (deixar passar uma fraude) versus um Falso Positivo (bloquear um cliente legítimo).
 
@@ -75,21 +97,54 @@ Além das etapas solicitadas no desafio base, as seguintes melhorias foram incor
 
 ---
 
-## 🛠️ Como Executar o Projeto
+## 🏗️ 6. Como Construi o Projeto
+Acessei a página do Colab **colab.research.google.com**, para criar um bloco de notas e colar os códigos por etapas e que já vem com as bibliotecas como: **pandas**, **scikit-learn**, **xgboost** e **shap** instaladas.
+
+---
+
+## 🛠️ 7. Como Executar o Projeto
 
 1. Clone este repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+   git clone [https://github.com/izauratm/DeteccaoAnomaliasTransacoesPython.git](https://github.com/izauratm/DeteccaoAnomaliasTransacoesPython.git)
+
+2. Instale as dependências necessárias:
+```bash
+pip install pandas numpy scikit-learn xgboost shap matplotlib seaborn imbalanced-learn
+```
+3. Abra e execute o arquivo `.ipynb` no Jupyter Notebook ou no Google Colab.
 
 ---
 
-📎 Link do curso: [DIO.me](https://web.dio.me/home) 
+## 🖥️ 8. Desenvolvedora 
+Izaura TM - responsável pelo desenvolvimento, estrutura e estilização do projeto.
 
 ---
-## 📝 Licença
+  
+## ✍️ 9. Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para sugerir melhorias ou reportar problemas. 
+
+---
+## 📝 10. Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 <img alt="Static Badge" src="https://img.shields.io/badge/license-MIT-green">
+
+---
+### 📎 Links Úteis e Referências: 
+- [DIO.me](https://web.dio.me/home)
+- [Biblioteca Ofical do Python](https://docs.python.org/pt-br/3/library/index.html)
+- [Google Colab](https://colab.research.google.com)
+- [Pandas (Análise e Manipulação de Dados)](https://pandas.pydata.org/docs/)
+- [W3School Seaborn](https://www.w3schools.com/python/numpy/numpy_random_seaborn.asp)
+- [Scikit-Learn](https://scikit-learn.org/stable/index.html)
+- [PEP 8 Style Guide](https://peps.python.org/pep-0008/)
+- [Kaggle Notebooks](https://www.kaggle.com/code)
+- [Seaborn ](http://seaborn.pydata.org/tutorial/introduction)
+- [Streamlit Docs](https://docs.streamlit.io/)
+ 
+
+---
 
    
