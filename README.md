@@ -97,8 +97,8 @@ Além das etapas solicitadas no desafio base, as seguintes melhorias foram incor
 
 ---
 
-## 🏗️ 6. Como Construi o Projeto
-Acessei a página do Colab **colab.research.google.com**, para criar um bloco de notas e colar os códigos por etapas e que já vem com as bibliotecas como: **pandas**, **scikit-learn**, **xgboost** e **shap** instaladas.
+## 🏗️ 6. Como Construir o Projeto
+Acesse a página do Colab **colab.research.google.com**, para criar um bloco de notas e colar os códigos por etapas e que já vem com as bibliotecas como: **pandas**, **scikit-learn**, **xgboost** e **shap** instaladas.
 
 ---
 
@@ -112,7 +112,7 @@ Acessei a página do Colab **colab.research.google.com**, para criar um bloco de
 ```bash
 pip install pandas numpy scikit-learn xgboost shap matplotlib seaborn imbalanced-learn
 ```
-3. Abra e execute o arquivo `.ipynb` no Jupyter Notebook ou no Google Colab.
+3. Abra e execute o arquivo **.ipynb** no Jupyter Notebook ou no Google Colab.
 
 ---
 
