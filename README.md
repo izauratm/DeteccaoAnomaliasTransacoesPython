@@ -67,7 +67,7 @@ Melhor limiar de decisão encontrado: 1.0000
     accuracy                           1.00     56962
    macro avg       0.92      0.91      0.91     56962
 weighted avg       1.00      1.00      1.00     56962
-````
+```
 
 > **Nota:** A escolha do modelo final depende do custo financeiro de um Falso Negativo (deixar passar uma fraude) versus um Falso Positivo (bloquear um cliente legítimo).
 
@@ -105,19 +105,21 @@ Acesse a página do Colab **colab.research.google.com**, para criar um bloco de 
 ## 🛠️ 7. Como Executar o Projeto
 
 1. Clone este repositório:
-   ```bash
+  ```bash
    git clone [https://github.com/izauratm/DeteccaoAnomaliasTransacoesPython.git](https://github.com/izauratm/DeteccaoAnomaliasTransacoesPython.git)
+  ```
 
 2. Instale as dependências necessárias:
-```bash
+  ```bash
 pip install pandas numpy scikit-learn xgboost shap matplotlib seaborn imbalanced-learn
-```
+  ```
+
 3. Abra e execute o arquivo **.ipynb** no Jupyter Notebook ou no Google Colab.
 
 ---
 
 ## 🖥️ 8. Desenvolvedora 
-Izaura TM - responsável pelo desenvolvimento, estrutura e estilização do projeto.
+Izaura TM - responsável pelo desenvolvimento e estrutura do projeto.
 
 ---
   
@@ -140,11 +142,13 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 - [W3School Seaborn](https://www.w3schools.com/python/numpy/numpy_random_seaborn.asp)
 - [Scikit-Learn](https://scikit-learn.org/stable/index.html)
 - [PEP 8 Style Guide](https://peps.python.org/pep-0008/)
+- [Matplotlib](https://matplotlib.org/)
 - [Kaggle Notebooks](https://www.kaggle.com/code)
-- [Seaborn ](http://seaborn.pydata.org/tutorial/introduction)
+- [XGBoost](https://xgboost.readthedocs.io/en/stable/)
+- [Seaborn](http://seaborn.pydata.org/tutorial/introduction)
 - [Streamlit Docs](https://docs.streamlit.io/)
  
 
----
+
 
    
